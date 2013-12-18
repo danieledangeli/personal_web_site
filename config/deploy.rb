@@ -7,9 +7,10 @@ set :domain,      ["www.meytip.com"]
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # set :deploy_to, '/var/www/my_app'
-set :scm, :git
-set   :repo_url,    "/Users/danieledangeli/Desktop/danieledangeli"
-set   :deploy_via,    :copy
+set :repo_url,  "git@github.com:danieledangeli/personal_web_site.git"
+
+set :scm,         :git
+set :branch, "master"
 
 # set :format, :pretty
 # set :log_level, :debug

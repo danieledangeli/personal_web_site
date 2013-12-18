@@ -313,7 +313,7 @@ Working in team. Work based on Agile methodologies and test driven development (
              
                     
 
-                <div class="ui items js-masonry" id="portfolio" data-masonry-options='{ "itemSelector": ".item", "columnWidth": 100 }'>
+                <div class="ui items js-masonry" id="container" data-masonry-options='{ "itemSelector": ".item", "columnWidth": 100 }'>
                 
 
   <div class="portofolioitem item">
@@ -428,11 +428,15 @@ Realization of landing page and mvp demo product, android and ioS application. B
 
 <script type="text/javascript">
   $(function() { 
-   
+   var $container = $('#container');
+
+    // initialize Masonry after all images have loaded  
+    $container.imagesLoaded( function() {
+       $container.masonry();
+    });
    
   });
 
-  });
 </script>
 
 
