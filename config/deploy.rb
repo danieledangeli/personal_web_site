@@ -1,10 +1,15 @@
 set :application, 'danieledangeli'
+set :deploy_to,   "/home/ivan/public_html/danieledangeli"
+set :user, "root"
+set :domain,      ["www.meytip.com"]
 #set :repo_url, 'git@example.com:me/my_repo.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # set :deploy_to, '/var/www/my_app'
 set :scm, :git
+set   :repo_url,    "/Users/danieledangeli/Desktop/danieledangeli"
+set   :deploy_via,    :copy
 
 # set :format, :pretty
 # set :log_level, :debug
