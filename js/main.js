@@ -32,7 +32,7 @@ function animMeter(){
 }
 animMeter();
 
-      $('#tab-container').easytabs({
+    $('#tab-container').easytabs({
         animate			: true,
         updateHash		: true,
         transitionIn	: 'slideDown',
@@ -42,16 +42,21 @@ animMeter();
             if($targetPanel.selector=='#resume'){
                     animMeter();
             }
-            if($targetPanel.selector=='#container'){
+            
+    }).bind('easytabs:after', function(event, $clicked, $targetPanel) {
+        if($targetPanel.selector=='#container'){
               
-      // layout Masonry again after all images have loaded
-      $('#container').imagesLoaded( function() {
-          $('#container').masonry({
-              columnWidth: 100,
-              itemSelector: '.item'
+          // layout Masonry again after all images have loaded
+          $('#container').imagesLoaded( function() {
+              $('#container').masonry({
+                  columnWidth: 100,
+                  itemSelector: '.item'
+              });
           });
-      });
                
-            }
-    });
+        }
+
+       });
+
+
 });
