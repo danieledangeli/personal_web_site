@@ -26,8 +26,8 @@
   <script src="js/vendor/jquery.hashchange.min.js"></script>
   <script src="js/vendor/jquery.easytabs.min.js"></script>
   <script src="packaged/javascript/semantic.min.js"></script>
-
   <script src="js/main.js"></script>
+  <script src="js/imagesloaded.pkgd.min"></script>
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -321,7 +321,7 @@ Working in team. Work based on Agile methodologies and test driven development (
       <div class="meta"><i class="external url icon"></i><a href="www.danieledangeli.com">www.danieledangeli.com</a></div>
       <div class="name">My Personal Site</div>
       <p class="description">
-        <img class="ui huge image" src="images/personal.png">
+        <img class="ui huge image" src="images/personal.png" />
         <p class="description"> This personal site is developed with a full-stack of frontend resources. The main template is a Premium One page template. The original theme is customized with <b>semantic ui</b> components, <b>masonry</b> JavaScript grid layout library <b>Twitter</b> feed API. Next step regarding the integration of javascript <b>Tumblr</b> API for the blog section.
           It's deployed on <b>Digital Ocean</b> with <b>Capistrano</b>
         </p>
@@ -332,7 +332,7 @@ Working in team. Work based on Agile methodologies and test driven development (
     <div class="content">
       <div class="meta"><i class="external url icon"></i><a href="www.meytip.com">www.meytip.com</a></div>
       <div class="name">Meytip</div>
-      <img class="ui huge image" src="images/meytip/meytip.png">
+      <img class="ui huge image" src="images/meytip/meytip.png" />
       <p class="description"><b>Startup idea</b> Meytip is startup idea born at <a href="http://www.innovactionlab.org/">InnovactionLab</a></p>. 
       With Meytip I learned more about startup idea, business validation, pitch, KPI metrics. We developed
       a Facebook Application as MVP.</p>
@@ -344,7 +344,7 @@ Working in team. Work based on Agile methodologies and test driven development (
     <div class="content">
       <div class="meta"><i class="external url icon"></i><a href="www.lameladepository.com">www.lameladepository.com</a></div>
       <div class="name">Lamela Depository</div>
-        <img class="ui huge image" src="images/lamela/lamela.png">
+        <img class="ui huge image" src="images/lamela/lamela.png" />
         <p class="description"> LamelaDepository is photography e-commerce developed with a custom wordpress solution. 
         Idea validation, study of style and features selection. 
         </p>
@@ -426,7 +426,14 @@ Realization of landing page and mvp demo product, android and ioS application. B
 
 <script type="text/javascript">
   $(function() { 
-  
+    // with jQuery
+var $container = $('#container');
+
+// initialize Masonry after all images have loaded  
+$container.imagesLoaded( function() {
+     $container.masonry();
+});
+  });
 </script>
 
 
