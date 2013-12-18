@@ -42,5 +42,16 @@ animMeter();
             if($targetPanel.selector=='#resume'){
                     animMeter();
             }
-        });
+            if($targetPanel.selector=='#container'){
+              
+      // layout Masonry again after all images have loaded
+      $('#container').imagesLoaded( function() {
+          $('#container').masonry({
+              columnWidth: 100,
+              itemSelector: '.item'
+          });
+      });
+               
+            }
     });
+});

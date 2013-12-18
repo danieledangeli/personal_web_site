@@ -89,9 +89,16 @@
                                 </h4>
                                 <div class="ui stacked segment">
                                 <p>
-                                    I'm Daniele D'angeli, an IT appassionate & Computer Science Engineer. I have 2 year experience in web and mobile development. I'm alaways in search of new experencies and challenges. My principals interests are It technologies, startup world, coding. In the last two years I worked mainly on <b>Symfony2</b>, Android</b>. In the last years I'm continuing to study Symfony2 framework with a focus on TDD approch and design patterns. My other interests are in cloud computing, node.js and performance testing. I love read book, mainly social psychology book.
+                                    I am Daniele D'angeli, an IT appassionate & Computer Science Engineer. I have 2 years experience in web and mobile development. I'm always in search of new experencies and challenges. My principal interests are IT technologies, startup world, coding. In the last two years I worked mainly on <b>Symfony2</b>, Android</b>. In the last years I'm continuing to study Symfony2 framework with a focus on TDD approch and design patterns. My other interests are cloud computing, node.js and performance testing. I love read books, mainly social psychology books.
                                 </p>
                               </div>
+                              <div class="ui facebook button">
+                                <i class="facebook icon"></i>
+                                   My FB Profile
+                              </div>
+                              <div class="ui twitter button">Follow me<i class="twitter icon"></i> 
+                              </div>
+                              <div class="ui linkedin button"><i class="linkedin icon"></i>LinkedIn profile</div>
                             </div>
                         </div>
                         <div class="g1">
@@ -101,36 +108,8 @@
 
                             </div>
                         </div>
-                        <div class="break"></div>
-                        <div class="contact-info">
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-envelope"></i>
-                              <div class="item-data">
-                                <h3><a href="mailto:sunny@mrova.com">dangeli88.daniele@gmail.com</a></h3>
-                                <p>Email Address</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-facebook"></i>
-                              <div class="item-data">
-                                <h3><a href="http://fb.me/daniele.dangeli.10">@danieledangeli</a></h3>
-                                <p>Facebook Profile</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-twitter"></i>
-                              <div class="item-data">
-                                <h3><a href="https://twitter.com/dangelidaniele">@danieledangeli</a></h3>
-                                <p>Twitter</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        
+                       
                     </section><!-- content -->
                 </div>
               <!-- End About Tab Data -->
@@ -313,7 +292,7 @@ Working in team. Work based on Agile methodologies and test driven development (
              
                     
 
-                <div class="ui items js-masonry" id="container" data-masonry-options='{ "itemSelector": ".item", "columnWidth": 100 }'>
+                <div class="ui items" id="container">
                 
 
   <div class="portofolioitem item">
@@ -425,14 +404,16 @@ Realization of landing page and mvp demo product, android and ioS application. B
 </div><!-- #main-container -->
 
 <script type="text/javascript">
-  $(function() { 
+  $(window).load(function() { 
     // with jQuery
-var $container = $('#container');
+        $('#container').masonry({
+          columnWidth: 100,
+          itemSelector: '.item'
+      });
+ 
 
 // initialize Masonry after all images have loaded  
-$container.imagesLoaded( function() {
-     $container.masonry();
-});
+
   });
 </script>
 
