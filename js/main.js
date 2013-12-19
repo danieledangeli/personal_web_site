@@ -46,11 +46,16 @@ animMeter();
     }).bind('easytabs:after', function(event, $clicked, $targetPanel) {
         if($targetPanel.selector=='#container'){
               
-          // layout Masonry again after all images have loaded
+           //layout Masonry before the easy tabs is loaded
+           $('#container').masonry({
+                columnWidth: 100,
+                itemSelector: '.portofolioitem'
+            });
+            //layout Masonry again after all images have loaded
           $('#container').imagesLoaded( function() {
               $('#container').masonry({
                   columnWidth: 100,
-                  itemSelector: '.item'
+                  itemSelector: '.portofolioitem'
               });
           });
                
