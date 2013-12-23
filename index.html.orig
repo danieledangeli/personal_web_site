@@ -89,9 +89,13 @@
                                 </h4>
                                 <div class="ui stacked segment">
                                 <p>
+<<<<<<< HEAD
                                     I'm Daniele D'angeli, an IT appassionate & Computer Science Engineer. I've 2 years experience in web and mobile development. I'm always in search of new experencies and challenges. My principal interests are IT technologies, startup world, coding. The last two years I worked  in companies mainly on topics related to <b>Symfony2</b> and Android</b>. 
                                     In the last year I've never stopped studying Symfony2 framework, with a extra focus on TDD approch and design patterns. 
                                     I'm also interested in cloud computing, node.js and performance testing. I love read books, mainly social psychology books.
+=======
+                                    I am Daniele D'angeli, an IT appassionate & Computer Science Engineer. I have 2 years experience in web and mobile development. I'm always in search of new experiences and challenges. My principal interests are IT technologies, startup world, coding. In the last two years I worked mainly on <b>Symfony2</b>, <b>Android</b>. In the last year I'm continuing to study Symfony2 framework with a focus on TDD approch and design patterns. My other interests are cloud computing, node.js and performance testing. I love read books, mainly social psychology books.
+>>>>>>> 2d94a38e20b120052bb43a015f81c6a843328dfb
                                 </p>
                               </div>
                               <div class="ui facebook button">
