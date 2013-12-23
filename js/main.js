@@ -52,7 +52,7 @@ animMeter();
                   columnWidth: 100,
                   itemSelector: '.item'
               });
-          });
+         });
                
         }
 
